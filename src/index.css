@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+Sinhala:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sinhala: "Noto Serif Sinhala", serif;
+  
+  --color-avurudu-red: #d91b1b;
+  --color-avurudu-gold: #f2b705;
+  --color-avurudu-green: #038c3e;
+}
+
+@layer base {
+  body {
+    @apply bg-orange-50 text-gray-900 font-sans;
+  }
+  
+  h1, h2, h3, .sinhala-text {
+    @apply font-sinhala;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.festive-gradient {
+  background: linear-gradient(135deg, #d91b1b 0%, #f2b705 100%);
+}
+
